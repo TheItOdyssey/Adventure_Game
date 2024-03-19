@@ -25,6 +25,7 @@ clear()
 if start_exit == "1":
     clear()
     print("Welcome to Niggaland")
+    #STINKY
 elif start_exit == "2":
     exit()
 else: 
