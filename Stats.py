@@ -1,13 +1,16 @@
 import Race_maker
 
-class human():
-    Hp = 20
-    dmg = 5
+class human:
+    def __init__(self):
+        self.Hp = 20
+        self.dmg = 5
 
-class Orc():
-    Hp = 15
-    dmg = 3
+class Orc:
+    def __init__(self):
+        self.Hp = 15
+        self.dmg = 3
 
-class Leopold():
-    Hp = 10
-    dmg = 2
+class Leopold:
+    def __init__(self):
+        self.Hp = 10
+        self.dmg = 2

@@ -1,5 +1,6 @@
 import random
 
-class Blob():
-    Hp = 15
-    dmg = 6
+class Blob:
+    def __init__(self):
+        self.Hp = 15
+        self.dmg = random.randint(4, 6)
