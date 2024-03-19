@@ -2,7 +2,7 @@
 import Game_over
 import os
 import Combat
-
+from Combat import combat
 
 
 key = 0
@@ -109,7 +109,7 @@ def situationchoice():
     def Encounter():
          clear()
          print("You encounter the Blob!\nYou can not run and are forced to fight!\n1:Attack")
-         Combat()
+         combat()
          return Encounter
 
     return situationchoice, outside, Castle, Forest, Home, Talk_Guard, Punch_Guard, Encounter

@@ -1,6 +1,6 @@
 import Stats
 import The_blob
-import main
+import Race_maker
 
 class Combat:
     def __init__(self, player, enemy):

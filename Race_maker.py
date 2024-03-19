@@ -27,3 +27,5 @@ def pick_race():
         race = Leopold
         
     return race
+
+ChosenRace = pick_race

@@ -14,7 +14,7 @@ clear()
 situation_choice = situationchoice()
 
 #Detta samlar de olika funktionerna från den andra modulen vilket är innästlade i varandra? i dunno tbh skrev lite skit och det funkade, tar man bort detta fuckas allt
-situationchoice_func, outside_func, castle_func, forest_func, home_func, talk_guard_func, punch_guard_func = situationchoice()
+situationchoice_func, outside_func, castle_func, forest_func, home_func, talk_guard_func, punch_guard_func, Encounter_func = situationchoice()
 
 #Starting shit
 print("Welcome to The Adventure of niggaland")
