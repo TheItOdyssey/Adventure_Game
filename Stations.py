@@ -1,7 +1,7 @@
 #importerar saker
 import Game_over
 import os
-import Race_maker
+
 
 
 
@@ -92,7 +92,10 @@ def situationchoice():
     def Punch_Guard():
           clear()
           print("You punched the guard")
-          print(f"'The Guard puches you back'\n\n dont be silly little {newRace}")
+          print(f"'The Guard puches you back'\n\n dont be silly")
+          punch_again =input("Would you like to punch him again? y/n")
+          
+          
           return Punch_Guard
 
     return situationchoice, outside, Castle, Forest, Home, Talk_Guard, Punch_Guard

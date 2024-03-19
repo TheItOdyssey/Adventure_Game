@@ -1,6 +1,11 @@
 import os
+from Stats import *
+
+
 clear = lambda: os.system('cls')
 clear()
+
+
 
 
 def pick_race():
@@ -9,16 +14,16 @@ def pick_race():
     if race == "1":
 
         clear()
-        race = "Human"
+        race = human
 
     elif race == "2":
 
         clear()
-        race = "Orc"
+        race = Orc
         
     elif race == "3":
 
         clear()
-        race = "Leopold"
+        race = Leopold
         
     return race
