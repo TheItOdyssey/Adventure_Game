@@ -1,7 +1,7 @@
 #importerar saker
 import Game_over
 import os
-
+import Combat
 
 
 
@@ -56,7 +56,11 @@ def situationchoice():
 
     def Forest():
          clear()
-         print("You stand before the big scary forest")
+         Choice1_Forest = input("You stand before the big scary forest, What would you like to do?\n1:go back\n2:Look around")
+         if Choice1_Forest == 1:
+              outside()
+         else:
+              Encounter()
          return Forest
     
     def Home():
@@ -92,13 +96,23 @@ def situationchoice():
     def Punch_Guard():
           clear()
           print("You punched the guard")
-          print(f"'The Guard puches you back'\n\n dont be silly")
-          punch_again =input("Would you like to punch him again? y/n")
+          print(f"'The Guard puches you back'\n\ndont be silly")
+          punch_again = input("Would you like to punch him again? y/n\n")
+          if punch_again == "y":
+            Punch_Guard()
+          else: 
+               Castle()
           
           
           return Punch_Guard
+    
+    def Encounter():
+         clear()
+         print("You encounter the Blob!\nYou can not run and are forced to fight!\n1:Attack")
+         Combat()
+         return Encounter
 
-    return situationchoice, outside, Castle, Forest, Home, Talk_Guard, Punch_Guard
+    return situationchoice, outside, Castle, Forest, Home, Talk_Guard, Punch_Guard, Encounter
 
 
 
