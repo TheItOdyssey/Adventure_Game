@@ -34,6 +34,7 @@ else:
 #Making your race and picking difficulty
 race = Race_maker.pick_race()
 print(f"You picked {race}")
+newRace = race
 clear()
 
 #Basen för att starta spelet. vet inte ens ifall detta behövs? kan egentligen bara kalla på funktionen home ju men jag är lat....

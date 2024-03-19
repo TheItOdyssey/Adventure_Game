@@ -89,10 +89,10 @@ def situationchoice():
                 Castle()
           return Talk_Guard
     
-    def Punch_Guard(race):
+    def Punch_Guard():
           clear()
           print("You punched the guard")
-          print(f"'The Guard puches you back'\n\n dont be silly little {race}")
+          print(f"'The Guard puches you back'\n\n dont be silly little {newRace}")
           return Punch_Guard
 
     return situationchoice, outside, Castle, Forest, Home, Talk_Guard, Punch_Guard
